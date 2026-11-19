@@ -1270,7 +1270,7 @@ class MainWindow(QMainWindow):
                 self.user_label.setText(f"ID: {cfg.get('user_id')}")
             self.tabs.setCurrentIndex(0)
             self.append_chat("system",
-                             "Авторизация успешна. Вставьте ссылку и нажмите «دخول».")
+                             "تم تسجيل الدخول بنجاح. أدخل رابط الغرفة واضغط «دخول».")
         else:
             self.auth_status.setText(message)
 
@@ -1350,7 +1350,7 @@ class MainWindow(QMainWindow):
             return None
 
     def _update_part_count(self):
-        self.part_hint.setText(f"Участников: {self.part_list.count()}")
+        self.part_hint.setText(f"عدد المشاركين: {self.part_list.count()}")
 
     def _packet_clicked(self, item: QListWidgetItem):
         raw = item.data(Qt.UserRole)
